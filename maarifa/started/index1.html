@@ -1,0 +1,41 @@
+<!-- 
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"> </head>
+  </head>
+  <body>
+    <h1>Talk to Theuri</h1>
+
+    <div class="prompt-container">
+      <textarea id="prompt" placeholder="Enter your prompt for Gemini..."></textarea>
+      <button id="submit-button">Ask Gemini</button>
+    </div>
+  
+    <div id="response"></div>
+    <!-- ... Your HTML and CSS -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module">
+      import { GoogleGenerativeAI } from "@google/generative-ai";
+
+      // Fetch your API_KEY
+      const API_KEY = "AIzaSyA54EJaKJ_zW4dsnwMWACMDvJT3UaF5zjQ";
+
+      // Access your API key (see "Set up your API key" above)
+      const genAI = new GoogleGenerativeAI(API_KEY);
+
+      // ...
+
+      const model = genAI.getGenerativeModel({ model: "MODEL_NAME"});
+
+      // ...
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html> -->
